@@ -1,0 +1,1 @@
+My extension functionalities for this problem essentially change the background colour of the webpage, changes the text sizing on the webpage and changes the text font family. 

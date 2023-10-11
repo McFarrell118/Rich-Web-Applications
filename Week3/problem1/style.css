@@ -1,0 +1,47 @@
+.flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1px; /* Offset for the 1px borders, ensuring the outer grid border looks consistent */
+}
+
+.cell {
+    flex: 1 0 25%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+    background-color: #2f90ff; 
+    color: #000000;
+    transition: background-color 0.3s; /*transition for hover effect */
+}
+
+.cell:hover {
+    background-color: #0056b3; 
+}
+
+/* Coloring and styles for nested grids */
+.flex-grid .flex-grid {
+    margin: 0;
+}
+
+.flex-grid .flex-grid .cell {
+    background-color: #29ff5b; 
+}
+
+.flex-grid .flex-grid .cell:hover {
+    background-color: #1e7e34; 
+}
+
+/* If the window size is less than 960px */
+@media (max-width: 960px) {
+    .cell {
+        flex-basis: 50%;
+    }
+}
+
+/* If the window size is less than 640px */
+@media (max-width: 640px) {
+    .cell {
+        flex-basis: 100%;
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "DOM Extension",
+    "version": "1.0",
+    "description": "An extension to modify the DOM of webpages.",
+    "permissions": ["activeTab", "storage", "scripting", "tabs"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "host_permissions": ["<all_urls>"]
+}
