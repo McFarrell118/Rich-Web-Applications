@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note-Taking App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.4.0/rxjs.umd.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Michael's Note-Taking App</h1>
+        <section class="note-control">
+            <textarea id="noteInput" placeholder="Type your note here..."></textarea>
+            <select id="colorPicker">
+                <option value="#FD0202">Red</option>
+                <option value="#84F828">Green</option>
+                <option value="#38A9EB">Blue</option>
+                <option value="#772BF4">Purple</option>
+            </select>
+            <button id="addNoteButton">Add Note</button>
+        </section>
+
+        <section id="notes"></section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

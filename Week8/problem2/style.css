@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.timer-display {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.inputs {
+    margin-bottom: 20px;
+}
+
+.inputs input {
+    width: 50px;
+    padding: 5px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.inputs span {
+    font-size: 1.5em;
+    margin: 0 5px;
+}
