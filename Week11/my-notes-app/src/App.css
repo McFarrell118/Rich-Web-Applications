@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Light background */
+  color: #333; /* Dark text for light mode */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.note-control {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#noteInput {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.note {
+  padding: 20px;
+  margin: 10px 0;
+  position: relative;
+  border-radius: 4px;
+}
+
+.edit, .delete, .speak {
+  position: absolute;
+  top: 5px;
+  border: 1px solid #333;
+  background: #f5f5f5;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  outline: none;
+  transition: background-color 0.2s;
+}
+
+.edit:hover, .delete:hover, .speak:hover {
+  background-color: #e0e0e0;
+}
+
+.edit {
+  right: 90px;
+}
+
+.delete {
+  right: 10px;
+}
+
+.speak {
+  left: 10px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #282c34; /* Dark background for dark mode */
+  color: #ffffff; /* Light text for dark mode */
+}
+
+.dark-mode .container {
+  background: #3c4043; /* Darker background for container */
+  box-shadow: 0 0 10px rgba(255,255,255,0.1); /* Lighter box-shadow */
+}
+
+.dark-mode .note-control, .dark-mode .note {
+  background-color: #333; /* Darker background for notes and control */
+}
+
+.dark-mode .edit, .dark-mode .delete, .dark-mode .speak {
+  background: #555; /* Darker buttons background */
+  color: #fff; /* Light text for buttons */
+}
+
+.dark-mode .edit:hover, .dark-mode .delete:hover, .dark-mode .speak:hover {
+  background-color: #777; /* Lighter background on hover for buttons */
+}
